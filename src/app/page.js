@@ -57,7 +57,7 @@ export default function Home() {
           <div className='col-span-5'>      
             {
               bubbleMap.data.map((mb, index) => (
-                <button key={index} className={` text-xs md:text-sm w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-thin ${data === mb ? 'bg-[#76C779] text-white' : ''} ${!isEligible('data', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100' : ''}`}
+                <button key={index} className={` text-xs md:text-sm w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-thin ${data === mb ? 'bg-[#76C779] text-white' : ''} ${!isEligible('data', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-black' : ''}`}
                 onClick={
                   () => setData(mb)
                 }
@@ -82,7 +82,7 @@ export default function Home() {
           <div className='col-span-5'>      
             {
               bubbleMap.fourg.map((mb, index) => (
-                <button key={index} className={` text-xs md:text-sm w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-thin ${fourg === mb ? 'bg-[#76C779] text-white' : ''} ${!isEligible('fourg', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100' : ''}`}
+                <button key={index} className={` text-xs md:text-sm w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-thin ${fourg === mb ? 'bg-[#76C779] text-white' : ''} ${!isEligible('fourg', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-black' : ''}`}
                 onClick={
                   () => setFourg(mb)
                 }
@@ -106,7 +106,7 @@ export default function Home() {
           <div className='col-span-5'>      
             {
               bubbleMap.voice.map((minute, index) => (
-                <button key={index} className={` text-xs md:text-sm w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-thin ${voice === minute ? 'bg-[#EE395A] text-white' : ''} ${!isEligible('voice', minute) ? 'cursor-not-allowed opacity-80 bg-gray-100' : ''}`}
+                <button key={index} className={` text-xs md:text-sm w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-thin ${voice === minute ? 'bg-[#EE395A] text-white' : ''} ${!isEligible('voice', minute) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-black' : ''}`}
                 onClick={
                   () => setVoice(minute)
                 }
@@ -130,7 +130,7 @@ export default function Home() {
           <div className='col-span-5'>      
             {
               bubbleMap.bioscope.map((mb, index) => (
-                <button key={index} className={` text-xs md:text-sm w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-thin ${bioscope === mb ? 'bg-[#C34AB7] text-white' : ''} ${!isEligible('bioscope', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100' : ''}`}
+                <button key={index} className={` text-xs md:text-sm w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-thin ${bioscope === mb ? 'bg-[#C34AB7] text-white' : ''} ${!isEligible('bioscope', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-black' : ''}`}
                 onClick={
                   () => setBioscope(mb)
                 }
@@ -153,7 +153,7 @@ export default function Home() {
           <div className='col-span-5'>      
             {
               bubbleMap.sms.map((num, index) => (
-                <button key={index} className={` text-xs md:text-sm w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-thin ${sms === num ? 'bg-[#4ABBC3] text-white' : ''} ${!isEligible('sms', sms) ? 'cursor-not-allowed opacity-80 bg-gray-100' : ''}`}
+                <button key={index} className={` text-xs md:text-sm w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-thin ${sms === num ? 'bg-[#4ABBC3] text-white' : ''} ${!isEligible('sms', sms) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-black' : ''}`}
                 onClick={
                   () => setVoice(num)
                 }
