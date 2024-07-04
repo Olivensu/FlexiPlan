@@ -28,8 +28,8 @@ export default function Home() {
 
         <section className='grid grid-cols-8 gap-5 mt-5'>
           <div className='col-span-3'>            
-            <h3 className='text-lg md:text-2xl font-sans font-semibold md:font-medium'>Validity</h3>
-            <h3 className='text-lg md:text-2xl font-sans mt-1 font-semibold md:font-medium text-[#76C779]'>{longevity} Days</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans font-semibold md:font-medium'>Validity</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans mt-1 font-semibold md:font-medium text-[#76C779]'>{longevity} Days</h3>
           </div>
           <div className='col-span-5'>      
             {
@@ -50,9 +50,9 @@ export default function Home() {
 
         <section className='grid grid-cols-8 gap-5'>
           <div className='col-span-3'>            
-            <h3 className='text-lg md:text-2xl font-sans font-extralight'>Internet</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans font-extralight'>Internet</h3>
             <h3 className='text-lg mt-2 hidden md:block font-sans'>Regular</h3>
-            <h3 className='text-lg md:text-2xl font-sans mt-1 font-extralight text-[#76C779]'>{data>=1024 ? `${data/1024} GB`: `${data} MB`}</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans mt-1 font-extralight text-[#76C779]'>{data>=1024 ? `${data/1024} GB`: `${data} MB`}</h3>
           </div>
           <div className='col-span-5'>      
             {
@@ -74,10 +74,10 @@ export default function Home() {
 
         <section className='grid grid-cols-8  gap-5'>
           <div className='col-span-3'>            
-            <h3 className='text-lg md:text-2xl font-sans font-extralight'>4G Internet</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans font-semibold'>4G Internet</h3>
             <h3 className='text-lg mt-2 hidden md:block md:text-xl font-sans'>4G Only</h3>
-            <h3 className='text-lg md:text-2xl font-sans mt-1 font-extralight text-[#76C779]'>{fourg>=1024 ? `${fourg/1024} GB`: `${fourg} MB`}</h3>
-            <h3 className='text-lg mt-2 font-sans text-gray-500'>4G enabled handset + SIM required</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans mt-1 text-[#76C779]'>{fourg>=1024 ? `${fourg/1024} GB`: `${fourg} MB`}</h3>
+            <h3 className='text-lg mt-2 font-sans text-gray-500 font-medium'>4G enabled handset + SIM required</h3>
           </div>
           <div className='col-span-5'>      
             {
@@ -99,8 +99,8 @@ export default function Home() {
 
         <section className='grid grid-cols-8  gap-5'>
           <div className='col-span-3'>            
-            <h3 className='text-lg md:text-2xl font-sans font-extralight'>Minutes</h3>
-            <h3 className='text-lg md:text-2xl font-sans mt-1 font-extralight text-[#EE395A]'>{voice} Min</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans font-extralight'>Minutes</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans mt-1 font-extralight text-[#EE395A]'>{voice} Min</h3>
             <h3 className='text-lg mt-2 font-sans text-gray-500'>Any Local Number</h3>
           </div>
           <div className='col-span-5'>      
@@ -123,8 +123,8 @@ export default function Home() {
 
         <section className='grid grid-cols-8  gap-5'>
           <div className='col-span-3'>            
-            <h3 className='text-lg md:text-2xl font-sans font-extralight'>Bioscope</h3>
-            <h3 className='text-lg md:text-2xl font-sans mt-1 font-extralight text-[#C34AB7]'>{bioscope>=1024 ? `${bioscope/1024} GB`: `${bioscope} MB`}</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans font-extralight'>Bioscope</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans mt-1 font-extralight text-[#C34AB7]'>{bioscope>=1024 ? `${bioscope/1024} GB`: `${bioscope} MB`}</h3>
             <h3 className='text-lg mt-2 font-sans text-gray-500'>Only used to watch Bioscope</h3>
           </div>
           <div className='col-span-5'>      
@@ -147,8 +147,8 @@ export default function Home() {
 
         <section className='grid grid-cols-8  gap-5'>
           <div className='col-span-3'>            
-            <h3 className='text-lg md:text-2xl font-sans font-extralight'>SMS</h3>
-            <h3 className='text-lg md:text-2xl font-sans mt-1 font-extralight text-[#4ABBC3]'>{sms} SMS</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans font-extralight'>SMS</h3>
+            <h3 className='text-[16px] md:text-[22px] font-sans mt-1 font-extralight text-[#4ABBC3]'>{sms} SMS</h3>
           </div>
           <div className='col-span-5'>      
             {
