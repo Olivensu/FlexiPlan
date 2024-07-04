@@ -155,7 +155,7 @@ export default function Home() {
               bubbleMap.sms.map((num, index) => (
                 <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${sms === num ? 'bg-[#4ABBC3] text-white' : ''} ${!isEligible('sms', sms) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-black' : ''}`}
                 onClick={
-                  () => setVoice(num)
+                  () => setSms(num)
                 }
                 disabled={!isEligible("sms", num)}
                 >
