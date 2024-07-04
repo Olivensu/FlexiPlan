@@ -23,13 +23,13 @@ export default function Home() {
   return (
     <div className="mx-auto font-sans font-thin m-2 mb-10">
       <div className='w-full sm:w-[500px] md:w-[700px] mx-auto px-2'>
-        <h1 className='text-xl md:text-4xl font-sans font-thin text-center md:text-start my-6'>Flexiplan</h1>
-        <h1 className='text-xl hidden md:block font-sans font-thin'>Make your own plan and enjoy great savings! Only for GP Customers</h1>
+        <h1 className='text-xl md:text-4xl font-sans text-center md:text-start my-6 font-semibold'>Flexiplan</h1>
+        <h1 className='text-xl hidden md:block font-sans'>Make your own plan and enjoy great savings! Only for GP Customers</h1>
 
         <section className='grid grid-cols-8 gap-5 mt-5'>
           <div className='col-span-3'>            
-            <h3 className='text-lg md:text-2xl font-sans font-extralight'>Validity</h3>
-            <h3 className='text-lg md:text-2xl font-sans mt-1 font-extralight text-[#76C779]'>{longevity} Days</h3>
+            <h3 className='text-lg md:text-2xl font-sans font-semibold md:font-medium'>Validity</h3>
+            <h3 className='text-lg md:text-2xl font-sans mt-1 font-semibold md:font-medium text-[#76C779]'>{longevity} Days</h3>
           </div>
           <div className='col-span-5'>      
             {
