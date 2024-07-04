@@ -57,7 +57,7 @@ export default function Home() {
           <div className='col-span-5'>      
             {
               bubbleMap.data.map((mb, index) => (
-                <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${!isEligible('data', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-[#000]' : ''} ${data === mb ? 'bg-[#76C779] text-white' : ''} `}
+                <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${!isEligible('data', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-[#000]' : ''} ${data === mb && isEligible('data', mb) ? 'bg-[#76C779] text-white' : ''} `}
                 onClick={
                   () => setData(mb)
                 }
@@ -82,7 +82,7 @@ export default function Home() {
           <div className='col-span-5'>      
             {
               bubbleMap.fourg.map((mb, index) => (
-                <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${fourg === mb ? 'bg-[#76C779] text-white' : ''} ${!isEligible('fourg', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-[#000]' : ''}`}
+                <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${fourg === mb && isEligible('fourg', mb) ? 'bg-[#76C779] text-white' : ''} ${!isEligible('fourg', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-[#000]' : ''}`}
                 onClick={
                   () => setFourg(mb)
                 }
@@ -106,7 +106,7 @@ export default function Home() {
           <div className='col-span-5'>      
             {
               bubbleMap.voice.map((minute, index) => (
-                <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${voice === minute ? 'bg-[#EE395A] text-white' : ''} ${!isEligible('voice', minute) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-[#000]' : ''}`}
+                <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${voice === minute && isEligible('voice', minute) ? 'bg-[#EE395A] text-white' : ''} ${!isEligible('voice', minute) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-[#000]' : ''}`}
                 onClick={
                   () => setVoice(minute)
                 }
@@ -130,7 +130,7 @@ export default function Home() {
           <div className='col-span-5'>      
             {
               bubbleMap.bioscope.map((mb, index) => (
-                <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${bioscope === mb ? 'bg-[#C34AB7] text-white' : ''} ${!isEligible('bioscope', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-[#000]' : ''}`}
+                <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${bioscope === mb && isEligible('bioscope', mb) ? 'bg-[#C34AB7] text-white' : ''} ${!isEligible('bioscope', mb) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-[#000]' : ''}`}
                 onClick={
                   () => setBioscope(mb)
                 }
@@ -153,7 +153,7 @@ export default function Home() {
           <div className='col-span-5'>      
             {
               bubbleMap.sms.map((num, index) => (
-                <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${sms === num ? 'bg-[#4ABBC3] text-white' : ''} ${!isEligible('sms', sms) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-[#000]' : ''}`}
+                <button key={index} className={`text-[10px] md:text-[12px] w-12 h-12 md:w-16 md:h-16 m-1 md:m-2 rounded-full border-[1px] font-sans font-bold ${sms === num && isEligible('sms', sms) ? 'bg-[#4ABBC3] text-white' : ''} ${!isEligible('sms', sms) ? 'cursor-not-allowed opacity-80 bg-gray-100 text-[#000]' : ''}`}
                 onClick={
                   () => setSms(num)
                 }
